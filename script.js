@@ -58,6 +58,37 @@
 
 // }
 
+document.write(`3. Dado o valor do produto e a forma de pagamento.
+1= à vista;
+2= à prazo.
+Se o produto for pago à vista aplique um desconto de 10% antes de mostrar
+o valor final, senão informe o mesmo valor do produto.(usando switch)`)
 
+
+
+valorProduto = +(prompt(`Qual o valor total da compra?`))
+formaPagamento = prompt(`Qual a forma de pagamento?\n1 - À vista\n2 - À prazo`)
+
+switch (formaPagamento) {
+    case '1':
+        valorProduto = valorProduto * 0.90
+        document.write(`Para pagamento à vista é aplicado 10% de desconto.<br>O valor final é R$${valorProduto}`)
+        break
+
+    case '2':
+        parcelas = (prompt(`Parcelamos em até 3x.\nGostaria de parcelar em quantas vezes?`))
+        switch (parcelas) {
+            case '2':
+                valorProduto = valorProduto / 2
+                document.write(`Sua forma de pagamento será em 2x de R$${valorProduto}.`)
+                break
+
+            case '3':
+                valorProduto = valorProduto / 3
+                document.write(`Sua forma de pagamento será em 3x de R$${valorProduto}.`)
+                break
+        }
+        break
+}
 
 
