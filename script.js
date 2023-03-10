@@ -290,6 +290,19 @@ document.write(`10.Faça um programa usando o for que calcule o número médio d
 turma. Para isto, peça a quantidade de turmas e a quantidade de alunos para
 cada turma. As turmas não podem ter mais de 40 alunos.`)
 
-turma1 = parseInt(prompt(`Digite a quantidade de alunos da turma 1`))
-turma2 = parseInt(prompt(`Digite a quantidade de alunos da turma 2`))
-turma3 = parseInt(prompt(`Digite a quantidade de alunos da turma 3`))
+totalAlunos = 0
+qtdAlunos = 0
+qtdTurmas = parseInt(prompt(`Insira a quantidade de turmas: `))
+console.log(qtdTurmas)
+for (var i = 0; i < qtdTurmas; i++) {
+    while(qtdAlunos<40){
+        qtdAlunos = parseInt(prompt(`Insira a quantidade de alunos da turma: `))
+    
+        alert(`A quantidade de alunos por turma deve ser menor que 40`)
+    }
+    totalAlunos += qtdAlunos}
+
+mediaAlunos = totalAlunos / qtdTurmas
+console.log(mediaAlunos)
+
+document.write(`11. Criar uma função para calcular a porcentagem de um número.`)
