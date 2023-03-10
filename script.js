@@ -267,13 +267,29 @@
 
 // document.write(`<p>Usuário criado: ${usuario}<br>Senha atual: ${senha}</p>`)
 
-document.write(`9. Faça um programa usando o for que, dado um conjunto de N números,
-determine o menor valor, o maior valor e a soma dos valores.`)
+// document.write(`9. Faça um programa usando o for que, dado um conjunto de N números,
+// determine o menor valor, o maior valor e a soma dos valores.`)
 
-const num = [1,2,3,4,5,6];
-var soma
+// var n = [21, 43, 56, 78, 75]
+// var soma = 0, menor = 0, maior = 0
+// for (i = 0; i < 5; i++) {
+//     soma += n[i]
 
-for(i=1;i<num.length;i++){
-soma += num[i];
-}
-console.log(soma)
+//     if(n[i]<menor || menor==0){
+//         menor = n[i]
+//     }
+//     if(n[i]>maior){
+//         maior = n[i]
+//     }
+// }
+// document.write(`<br>A soma do conjunto de numeros N é: ${soma}`)
+// document.write(`<br>O menor valor é ${menor}`)
+// document.write(`<br>O menor valor é ${maior}`)
+
+document.write(`10.Faça um programa usando o for que calcule o número médio de alunos por
+turma. Para isto, peça a quantidade de turmas e a quantidade de alunos para
+cada turma. As turmas não podem ter mais de 40 alunos.`)
+
+turma1 = parseInt(prompt(`Digite a quantidade de alunos da turma 1`))
+turma2 = parseInt(prompt(`Digite a quantidade de alunos da turma 2`))
+turma3 = parseInt(prompt(`Digite a quantidade de alunos da turma 3`))
