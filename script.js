@@ -137,95 +137,114 @@
 //         document.write(`<br>Opção inválida.`)
 // }
 
-document.write(`5. Dada uma letra, usando switch, escreva na tela se essa letra é uma Vogal
-ou Consoante (Considerar apenas letras minúsculas).`)
+// document.write(`5. Dada uma letra, usando switch, escreva na tela se essa letra é uma Vogal
+// ou Consoante (Considerar apenas letras minúsculas).`)
 
-letra = prompt(`Digite uma letra para saber se é Vogal ou Consoante:`)
+// letra = prompt(`Digite uma letra para saber se é Vogal ou Consoante:`)
 
-switch (letra) {
-    case 'a':
-        document.write(`<br>Vogal`)
-        break
-    case 'e':
-        document.write(`<br><br>Vogal`)
-        break
-    case 'i':
-        document.write(`<br><br>Vogal`)
-        break
-    case 'o':
-        document.write(`<br><br>Vogal`)
-        break
-    case 'u':
-        document.write(`<br><br>Vogal`)
-        break
-    case 'b':
-        document.write(`Consoante`)
-        break
-    case 'c':
-        document.write(`Consoante`)
-        break
-    case 'd':
-        document.write(`Consoante`)
-        break
-    case 'e':
-        document.write(`Consoante`)
-        break
-    case 'f':
-        document.write(`Consoante`)
-        break
-    case 'g':
-        document.write(`Consoante`)
-        break
-    case 'h':
-        document.write(`Consoante`)
-        break
-    case 'j':
-        document.write(`Consoante`)
-        break
-    case 'k':
-        document.write(`Consoante`)
-        break
-    case 'l':
-        document.write(`Consoante`)
-        break
-    case 'm':
-        document.write(`Consoante`)
-        break
-    case 'n':
-        document.write(`Consoante`)
-        break
-    case 'p':
-        document.write(`Consoante`)
-        break
-    case 'q':
-        document.write(`Consoante`)
-        break
-    case 'r':
-        document.write(`Consoante`)
-        break
-    case 's':
-        document.write(`Consoante`)
-        break
-    case 't':
-        document.write(`Consoante`)
-        break
-    case 'v':
-        document.write(`Consoante`)
-        break
-    case 'w':
-        document.write(`Consoante`)
-        break
-    case 'x':
-        document.write(`Consoante`)
-        break
-    case 'y':
-        document.write(`Consoante`)
-        break
-    case 'z':
-        document.write(`Consoante`)
-        break
+// switch (letra) {
+//     case 'a':
+//         document.write(`<br>Vogal`)
+//         break
+//     case 'e':
+//         document.write(`<br><br>Vogal`)
+//         break
+//     case 'i':
+//         document.write(`<br><br>Vogal`)
+//         break
+//     case 'o':
+//         document.write(`<br><br>Vogal`)
+//         break
+//     case 'u':
+//         document.write(`<br><br>Vogal`)
+//         break
+//     case 'b':
+//         document.write(`Consoante`)
+//         break
+//     case 'c':
+//         document.write(`Consoante`)
+//         break
+//     case 'd':
+//         document.write(`Consoante`)
+//         break
+//     case 'e':
+//         document.write(`Consoante`)
+//         break
+//     case 'f':
+//         document.write(`Consoante`)
+//         break
+//     case 'g':
+//         document.write(`Consoante`)
+//         break
+//     case 'h':
+//         document.write(`Consoante`)
+//         break
+//     case 'j':
+//         document.write(`Consoante`)
+//         break
+//     case 'k':
+//         document.write(`Consoante`)
+//         break
+//     case 'l':
+//         document.write(`Consoante`)
+//         break
+//     case 'm':
+//         document.write(`Consoante`)
+//         break
+//     case 'n':
+//         document.write(`Consoante`)
+//         break
+//     case 'p':
+//         document.write(`Consoante`)
+//         break
+//     case 'q':
+//         document.write(`Consoante`)
+//         break
+//     case 'r':
+//         document.write(`Consoante`)
+//         break
+//     case 's':
+//         document.write(`Consoante`)
+//         break
+//     case 't':
+//         document.write(`Consoante`)
+//         break
+//     case 'v':
+//         document.write(`Consoante`)
+//         break
+//     case 'w':
+//         document.write(`Consoante`)
+//         break
+//     case 'x':
+//         document.write(`Consoante`)
+//         break
+//     case 'y':
+//         document.write(`Consoante`)
+//         break
+//     case 'z':
+//         document.write(`Consoante`)
+//         break
 
-    default:
+//     default:
 
-        document.write(`Opção inválida.`)
+//         document.write(`Opção inválida.`)
+// }
+
+// document.write(`6. Crie um programa usando o for que leia uma lista. Mostre no console
+// apenas os números pares. Esta lista deve ser assim: [1, 2, 3, 4, 5, 6, 7, 8, 9];<br><br>`)
+
+// lista=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+// for(i = 1; i<10; i++){
+//     if(lista[i]%2==0){
+//         console.log(`${lista[i]}`)
+//     }
+// }
+
+document.write(`7. Faça um programa usando o for que peça uma nota, entre zero e dez.
+Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.`)
+
+nota = -1
+
+while (nota < 0 || nota > 10) {
+    nota = +(prompt(`Digite a nota do aluno:`))
 }
