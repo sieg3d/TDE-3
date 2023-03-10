@@ -240,11 +240,34 @@
 //     }
 // }
 
-document.write(`7. Faça um programa usando o for que peça uma nota, entre zero e dez.
-Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.`)
+// document.write(`7. Faça um programa usando o for que peça uma nota, entre zero e dez.
+// Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.`)
 
-nota = -1
+// for (nota = prompt(`Digite a nota do aluno: `); nota < 0 || nota > 10;) {
+//     if (nota < 0 || nota > 10) {
+//         nota = parseFloat(prompt(`Valor inválido. Digite novamente:`))
+//     }
+// }
 
-while (nota < 0 || nota > 10) {
-    nota = +(prompt(`Digite a nota do aluno:`))
-}
+// document.write(`<p>A nota digitada foi: ${nota}</p>`)
+
+// document.write(`8. Faça um programa usando o for que leia um nome de usuário e a sua senha
+// e não aceite a senha igual ao nome do usuário, mostrando uma mensagem
+// de erro e voltando a pedir as informações.`)
+
+
+// senha = 0
+// for (usuario = 0; usuario === senha;) {
+//     usuario = prompt(`Digite o usuário:`)
+//     senha = prompt(`Digite a senha:`)
+//     if (usuario === senha) {
+//         alert(`Usuário e senha não podem ser iguais`)
+//     }
+// }
+
+// document.write(`<p>Usuário criado: ${usuario}<br>Senha atual: ${senha}</p>`)
+
+document.write(`9. Faça um programa usando o for que, dado um conjunto de N números,
+determine o menor valor, o maior valor e a soma dos valores.`)
+
+
