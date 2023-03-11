@@ -286,23 +286,32 @@
 // document.write(`<br>O menor valor é ${menor}`)
 // document.write(`<br>O menor valor é ${maior}`)
 
-document.write(`10.Faça um programa usando o for que calcule o número médio de alunos por
-turma. Para isto, peça a quantidade de turmas e a quantidade de alunos para
-cada turma. As turmas não podem ter mais de 40 alunos.`)
+// document.write(`10.Faça um programa usando o for que calcule o número médio de alunos por
+// turma. Para isto, peça a quantidade de turmas e a quantidade de alunos para
+// cada turma. As turmas não podem ter mais de 40 alunos.`)
 
-totalAlunos = 0
-qtdAlunos = 0
-qtdTurmas = parseInt(prompt(`Insira a quantidade de turmas: `))
-console.log(qtdTurmas)
-for (var i = 0; i < qtdTurmas; i++) {
-    while(qtdAlunos<40){
-        qtdAlunos = parseInt(prompt(`Insira a quantidade de alunos da turma: `))
-    
-        alert(`A quantidade de alunos por turma deve ser menor que 40`)
-    }
-    totalAlunos += qtdAlunos}
+// totalAlunos = 0
+// qtdAlunos = 0
+// qtdTurmas = parseInt(prompt(`Insira a quantidade de turmas: `))
+// console.log(qtdTurmas)
+// for (var i = 0; i < qtdTurmas; i++) {
+//     do {
+//         qtdAlunos = parseInt(prompt(`Insira a quantidade de alunos da turma: `))
+//         if (qtdAlunos > 40) {
+//             alert(`A quantidade de alunos por turma deve ser menor que 40`)
+//         }
+//     } while (qtdAlunos > 40)
+//     totalAlunos += qtdAlunos
+// }
 
-mediaAlunos = totalAlunos / qtdTurmas
-console.log(mediaAlunos)
+// mediaAlunos = totalAlunos / qtdTurmas
+// console.log(mediaAlunos)
 
 document.write(`11. Criar uma função para calcular a porcentagem de um número.`)
+function percent(numero, porcentagem){
+return (numero*porcentagem)/100
+}
+numero = +(prompt(`Insira o numero que deseja a calcular a porcentagem: `))
+porcentagem = +(prompt(`Insira a porcentagem a ser calculada: `))
+resultado = percent(numero, porcentagem)
+document.write(`O calulo da porcentagem de ${numero} por ${porcentagem}% é ${resultado}`)
