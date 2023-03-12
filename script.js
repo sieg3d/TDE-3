@@ -307,11 +307,57 @@
 // mediaAlunos = totalAlunos / qtdTurmas
 // console.log(mediaAlunos)
 
-document.write(`11. Criar uma função para calcular a porcentagem de um número.`)
-function percent(numero, porcentagem){
-return (numero*porcentagem)/100
-}
-numero = +(prompt(`Insira o numero que deseja a calcular a porcentagem: `))
-porcentagem = +(prompt(`Insira a porcentagem a ser calculada: `))
-resultado = percent(numero, porcentagem)
-document.write(`O calulo da porcentagem de ${numero} por ${porcentagem}% é ${resultado}`)
+// document.write(`11. Criar uma função para calcular a porcentagem de um número.`)
+// function percent(numero, porcentagem){
+// return (numero*porcentagem)/100
+// }
+// numero = +(prompt(`Insira o numero que deseja a calcular a porcentagem: `))
+// porcentagem = +(prompt(`Insira a porcentagem a ser calculada: `))
+// resultado = percent(numero, porcentagem)
+// document.write(`O calulo da porcentagem de ${numero} por ${porcentagem}% é ${resultado}`)
+
+// document.write(`12.Criar uma função que converta a temperatura de Celsius para Fahrenheit.`)
+
+// function convertTemp(c) {
+//     return (c * 1.8) + 32
+// }
+
+// c = parseFloat(prompt(`Qual a temperatura em Celsius deseja converter para Fahrenheit?`))
+// f = convertTemp(c)
+
+// document.write(`<p>A conversão de ${c}° Celsius em Fahrenheit é ${f}°.</p>`)
+
+// document.write(`14.Crie uma função que calcule a raiz quadrada de um número e retorne um
+// número inteiro como resultado.`)
+
+// function raizQuadrada(numero) {
+//     raiz = Math.sqrt(numero)
+//     inteiro = Math.round(raiz)
+//     return inteiro
+// }
+
+// numero = +(prompt(`Digite o numero que deseja saber a raiz quadrada: `))
+// raizInteira = raizQuadrada(numero)
+
+// document.write(`<br>${raizInteira}`)
+
+
+document.write(`15.Crie uma função que receba dois números e retorne se o primeiro é maior ou
+igual ao segundo.`)
+
+function maiorNum(num1, num2) {
+    if (num1 >= num2) {
+        return true
+        }else{
+            return false
+        }
+
+    }
+
+
+num1 = +(prompt(`Digite o primeiro numero: `))
+num2 = +(prompt(`Digite o segundo numero: `))
+
+resultado = maiorNum(num1, num2)
+
+document.write(`<br>${resultado}`)
