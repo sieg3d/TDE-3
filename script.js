@@ -32,8 +32,7 @@
 // document.write(`2. Uma loja fornece 10% de desconto para funcionários e 5% de desconto para
 // clientes vips. Faça um programa usando switch que calcule o valor total a
 // ser pago por uma pessoa. O programa deverá ler o valor total da compra
-// efetuada e um código que identifique se o comprador é um cliente comum
-// (1), funcionário (2) ou vip (3).`)
+// efetuada e um código que identifique se o comprador é um cliente comum (1), funcionário (2) ou vip (3).`)
 
 // valorTotal = +(prompt(`Qual o valor total da compra?`))
 // promocao = prompt(`Informe se: \n1 - Cliente Comum\n2 - Funcionário\n3 - Cliente VIP`)
@@ -245,16 +244,16 @@
 //     }
 // }
 
-document.write(`7. Faça um programa usando o for que peça uma nota, entre zero e dez.
-Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.`)
+// document.write(`7. Faça um programa usando o for que peça uma nota, entre zero e dez.
+// Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.`)
 
-for (nota = prompt(`Digite a nota do aluno: `); nota < 0 || nota > 10;) {
-    if (nota < 0 || nota > 10) {
-        nota = parseFloat(prompt(`Valor inválido. Digite novamente:`))
-    }
-}
+// for (nota = prompt(`Digite a nota do aluno: `); nota < 0 || nota > 10;) {
+//     if (nota < 0 || nota > 10) {
+//         nota = parseFloat(prompt(`Valor inválido. Digite novamente:`))
+//     }
+// }
 
-document.write(`<p>A nota digitada foi: ${nota}</p>`)
+// document.write(`<p>A nota digitada foi: ${nota}</p>`)
 
 // document.write(`8. Faça um programa usando o for que leia um nome de usuário e a sua senha
 // e não aceite a senha igual ao nome do usuário, mostrando uma mensagem
@@ -280,16 +279,16 @@ document.write(`<p>A nota digitada foi: ${nota}</p>`)
 // for (i = 0; i < 5; i++) {
 //     soma += n[i]
 
-//     if(n[i]<menor || menor==0){
+//     if (n[i] < menor || menor == 0) {
 //         menor = n[i]
 //     }
-//     if(n[i]>maior){
+//     if (n[i] > maior) {
 //         maior = n[i]
 //     }
 // }
 // document.write(`<br>A soma do conjunto de numeros N é: ${soma}`)
 // document.write(`<br>O menor valor é ${menor}`)
-// document.write(`<br>O menor valor é ${maior}`)
+// document.write(`<br>O maior valor é ${maior}`)
 
 // document.write(`10.Faça um programa usando o for que calcule o número médio de alunos por
 // turma. Para isto, peça a quantidade de turmas e a quantidade de alunos para
@@ -313,8 +312,8 @@ document.write(`<p>A nota digitada foi: ${nota}</p>`)
 // console.log(mediaAlunos)
 
 // document.write(`11. Criar uma função para calcular a porcentagem de um número.`)
-// function percent(numero, porcentagem){
-// return (numero*porcentagem)/100
+// function percent(numero, porcentagem) {
+//     return (numero * porcentagem) / 100
 // }
 // numero = +(prompt(`Insira o numero que deseja a calcular a porcentagem: `))
 // porcentagem = +(prompt(`Insira a porcentagem a ser calculada: `))
