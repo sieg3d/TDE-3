@@ -87,11 +87,16 @@
 //                 valorProduto = valorProduto / 3
 //                 document.write(`Sua forma de pagamento será em 3x de R$${valorProduto}.`)
 //                 break
+
+//             default:
+//                 alert(`Parcelamos em no máximo 3x`)
+
 //         }
 //         break
 
 //     default:
-//         (`Opção inválida.`)
+//         alert(`Opção inválida.`)
+
 // }
 
 
@@ -99,15 +104,15 @@
 // disciplina Desenv Web 2 e imprima seu significado, de acordo com a tabela
 // abaixo. Caso seja informado um conceito inexistente, deve ser exibida uma
 // mensagem de erro. Conceito Significado:<br>
-// A Excelente<br>
-// B Ótimo<br>
-// C Bom<br>
-// D Regular<br>
-// E Ruim<br>
-// F Nos vemos de novo ano que vem...<br>`)
+// A - Excelente<br>
+// B - Ótimo<br>
+// C - Bom<br>
+// D - Regular<br>
+// E - Ruim<br>
+// F - Nos vemos de novo ano que vem...<br>`)
 
 // conceito = prompt(`Digite o conceito do aluno:`)
-// switch (conceito) {
+// switch (conceito.toUpperCase()) {
 
 //     case 'A':
 //         document.write(`<br>Excelente!`)
@@ -142,7 +147,7 @@
 
 // letra = prompt(`Digite uma letra para saber se é Vogal ou Consoante:`)
 
-// switch (letra) {
+// switch (letra.toLowerCase()) {
 //     case 'a':
 //         document.write(`<br>Vogal`)
 //         break
@@ -240,16 +245,16 @@
 //     }
 // }
 
-// document.write(`7. Faça um programa usando o for que peça uma nota, entre zero e dez.
-// Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.`)
+document.write(`7. Faça um programa usando o for que peça uma nota, entre zero e dez.
+Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.`)
 
-// for (nota = prompt(`Digite a nota do aluno: `); nota < 0 || nota > 10;) {
-//     if (nota < 0 || nota > 10) {
-//         nota = parseFloat(prompt(`Valor inválido. Digite novamente:`))
-//     }
-// }
+for (nota = prompt(`Digite a nota do aluno: `); nota < 0 || nota > 10;) {
+    if (nota < 0 || nota > 10) {
+        nota = parseFloat(prompt(`Valor inválido. Digite novamente:`))
+    }
+}
 
-// document.write(`<p>A nota digitada foi: ${nota}</p>`)
+document.write(`<p>A nota digitada foi: ${nota}</p>`)
 
 // document.write(`8. Faça um programa usando o for que leia um nome de usuário e a sua senha
 // e não aceite a senha igual ao nome do usuário, mostrando uma mensagem
@@ -342,22 +347,21 @@
 // document.write(`<br>${raizInteira}`)
 
 
-document.write(`15.Crie uma função que receba dois números e retorne se o primeiro é maior ou
-igual ao segundo.`)
+// document.write(`15.Crie uma função que receba dois números e retorne se o primeiro é maior ou
+// igual ao segundo.`)
 
-function maiorNum(num1, num2) {
-    if (num1 >= num2) {
-        return true
-        }else{
-            return false
-        }
+// function maiorNum(num1, num2) {
+//     if (num1 >= num2) {
+//         return true
+//     } else {
+//         return false
+//     }
 
-    }
+// }
 
+// num1 = +(prompt(`Digite o primeiro numero: `))
+// num2 = +(prompt(`Digite o segundo numero: `))
 
-num1 = +(prompt(`Digite o primeiro numero: `))
-num2 = +(prompt(`Digite o segundo numero: `))
+// resultado = maiorNum(num1, num2)
 
-resultado = maiorNum(num1, num2)
-
-document.write(`<br>${resultado}`)
+// document.write(`<br>${resultado}`)
